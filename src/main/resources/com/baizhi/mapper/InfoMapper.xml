@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.InfoMapper" >
+
+  <select id="selectAll" resultType="com.baizhi.entity.Info">
+    SELECT product_id AS productId,prodcut_name AS prodcutName,product_description AS productDescription,
+           product_icon AS productIcon,product_price AS productPrice,product_stock AS productStock,
+           category_type AS categoryType,create_time AS createTime,update_time AS updateTime  FROM product_info
+  </select>
+
+
+
+</mapper>
